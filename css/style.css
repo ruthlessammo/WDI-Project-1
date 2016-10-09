@@ -1,26 +1,42 @@
 .sprite1 {
-  width: 50px;
-  height: 50px;
-  background-color: red;
+  width: 100px;
+  height: 130px;
+  background-image: url(../images/trump-1.png);
   position: absolute;
   left: 0;
 
 }
 
 .sprite2 {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
+  width: 100px;
+  height: 130px;
+  background-image: url(../images/hillary-1.png);
+  background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 100px;
-
-
+  top: 150px;
 }
 
 .container {
   width: 100%;
-  height: 800px;
+  height: 310px;
   border: 1px solid black;
   position: relative;
+  background-color: brown;
+}
+
+header {
+  height: 300px;
+  background-image: url(../images/stands.png);
+}
+
+.scoreBoard {
+  float: right;
+  border: solid black 1px;
+  border-radius: 5px;
+  width: 285px;
+  height: 125px;
+  background-color: white;
+  margin-right: 30px;
+  text-align: center;
 }
