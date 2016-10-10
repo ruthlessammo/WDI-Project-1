@@ -49,6 +49,14 @@ header {
   background-position: 120px -5px;
 }
 
+.left2{
+  background-position: -138px -5px;
+}
+
+.right2{
+  background-position: -4px -144;
+}
+
 .trumpResults {
   padding: 4px 4px;
   display: block;
@@ -61,4 +69,8 @@ header {
 
 button {
   padding: 4px 4px;
+}
+
+h1 {
+  text-align: center;
 }
