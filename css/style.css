@@ -1,7 +1,7 @@
 .sprite1 {
   width: 100px;
   height: 130px;
-  background-image: url(../images/trump-1.png);
+  background-image: url(../images/trump-spritesheet.png);
   position: absolute;
   left: 0;
 
@@ -10,7 +10,7 @@
 .sprite2 {
   width: 100px;
   height: 130px;
-  background-image: url(../images/hillary-1.png);
+  background-image: url(../images/hillary-spritesheet.png);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -22,7 +22,7 @@
   height: 310px;
   border: 1px solid black;
   position: relative;
-  background-color: brown;
+  background-image: url(../images/track2_copy.png);
 }
 
 header {
@@ -39,4 +39,26 @@ header {
   background-color: white;
   margin-right: 30px;
   text-align: center;
+}
+
+.left1 {
+  background-position: 247px 150px;
+}
+
+.right1 {
+  background-position: 120px -5px;
+}
+
+.trumpResults {
+  padding: 4px 4px;
+  display: block;
+}
+
+.hillaryResults {
+  padding: 4px 4px;
+  display: block;
+}
+
+button {
+  padding: 4px 4px;
 }
