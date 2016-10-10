@@ -24,9 +24,6 @@ initializeSprites.addEventListener('click', function(e) {
 });
 
 
-
-
-
 var getWinner = function() {
   var winningScore = 1050;
   var trumpResultsElements;
@@ -49,7 +46,7 @@ var getWinner = function() {
 };
 
 $(document).on('keyup', function(e) {
-  //------------player 1's movements-----------
+
   if (raceInProgress) {
     if(e.key === 'z' && lastKey1 === 'x') {
       var left = parseFloat($sprite1.css("left"));
