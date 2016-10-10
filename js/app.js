@@ -8,8 +8,8 @@ var $sprite2 = $('.sprite2');
 var counter1 = "0";
 var counter2 = "0";
 
-var trumpWins = '0'
-var clintonWins = '0'
+var trumpWins = '0';
+var clintonWins = '0';
 
 
 $(document).on('keyup', function(e) {
@@ -58,9 +58,9 @@ $(document).on('keyup', function(e) {
       $sprite1.removeClass('active') && $sprite2.removeClass('active');
       console.log('Winner!');
       if(counter1 === 1000) {
-        trumpWins++;
+        return trumpWins++;
       } else if(counter2 === 1000) {
-        clintonWins++;
+        return clintonWins++;
       }
       document.getElementsByClassName('.trumpResults').textContent = trumpWins; document.getElementsByClassName('.hillaryResults').textContent = clintonWins;
     }

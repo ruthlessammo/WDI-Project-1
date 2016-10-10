@@ -38,7 +38,6 @@ header {
   height: 125px;
   background-color: white;
   margin-right: 30px;
-  text-align: center;
 }
 
 .left1 {
@@ -50,11 +49,11 @@ header {
 }
 
 .left2{
-  background-position: -138px -5px;
+  background-position: 0px -140px;
 }
 
 .right2{
-  background-position: -4px -144;
+  background-position: -6px -145px;
 }
 
 .trumpResults {
@@ -73,4 +72,5 @@ button {
 
 h1 {
   text-align: center;
+  font-family: 'FF Meta Bold';
 }
