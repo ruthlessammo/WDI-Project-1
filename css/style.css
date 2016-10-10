@@ -22,7 +22,7 @@
   height: 310px;
   border: 1px solid black;
   position: relative;
-  background-image: url(../images/track2_copy.png);
+  background-image: url(../images/runningtrack-09.png);
 }
 
 header {
@@ -72,5 +72,4 @@ button {
 
 h1 {
   text-align: center;
-  font-family: 'FF Meta Bold';
 }
