@@ -29,9 +29,6 @@ function countDown() {
 
 
 
-
-//------------------------------------------------------------------
-
 var trumpSpeech = document.getElementById('trumpWinningSpeech');
 trumpSpeech.src = "audio/trump1.mp3";
 
@@ -39,7 +36,7 @@ var hillarySpeech = document.getElementById('hillaryWinningSpeech');
 hillarySpeech.src = "audio/hillary2.mp3";
 
 var cheering = document.getElementById('cheering');
-cheering.src = "audio/cheering.mp3";
+cheering.src = "audio/cheering2.wav";
 
 var raceInProgress = true;
 
