@@ -11,11 +11,32 @@ var counter2 = 0;
 var trumpWins = 0;
 var clintonWins = 0;
 
+//----------------------------------------------------------------------------
+var count = 3;
+var timer = setInterval(countDown, 1000);
+
+
+function countDown() {
+  if(count === 0) {
+    clearInterval(timer);
+    $('#countdown').html("GO!");
+    //endCountdown();
+  } else {
+    $('#countdown').html(count);
+    count--;
+  }
+}
+
+
+
+
+//------------------------------------------------------------------
+
 var trumpSpeech = document.getElementById('trumpWinningSpeech');
 trumpSpeech.src = "audio/trump1.mp3";
 
 var hillarySpeech = document.getElementById('hillaryWinningSpeech');
-hillarySpeech.src = "audio/hillary1.mp3";
+hillarySpeech.src = "audio/hillary2.mp3";
 
 var cheering = document.getElementById('cheering');
 cheering.src = "audio/cheering.mp3";
@@ -43,7 +64,7 @@ initializeSprites.addEventListener('click', function(e) {
 
 
 var getWinner = function() {
-  var winningScore = 100;
+  var winningScore = 1050;
   var trumpResultsElements;
   var hillaryResultsElements;
 
