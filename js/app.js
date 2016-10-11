@@ -11,6 +11,15 @@ var counter2 = 0;
 var trumpWins = 0;
 var clintonWins = 0;
 
+var trumpSpeech = document.getElementById('trumpWinningSpeech');
+trumpSpeech.src = "audio/trump1.mp3";
+
+var hillarySpeech = document.getElementById('hillaryWinningSpeech');
+hillarySpeech.src = "audio/hillary1.mp3";
+
+var cheering = document.getElementById('cheering');
+cheering.src = "audio/cheering.mp3";
+
 var raceInProgress = true;
 
 var initializeSprites = document.getElementById('reset');
@@ -25,7 +34,7 @@ initializeSprites.addEventListener('click', function(e) {
 
 
 var getWinner = function() {
-  var winningScore = 1050;
+  var winningScore = 100;
   var trumpResultsElements;
   var hillaryResultsElements;
 
@@ -34,8 +43,10 @@ var getWinner = function() {
     console.log('Winner!');
     if(counter1 === winningScore) {
       trumpWins++;
+      trumpSpeech.play();
     } else if(counter2 === winningScore) {
       clintonWins++;
+      hillarySpeech.play();
     }
 
     trumpResultsElements = document.getElementById('trumpResults');
@@ -76,8 +87,10 @@ $(document).on('keyup', function(e) {
       counter2 = counter2+10;
       console.log(counter2);
     }
+    
     getWinner();
   }
+
 
 
 
