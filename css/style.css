@@ -104,12 +104,13 @@ h1 {
 }
 
 .controls {
-  color: yellow;
+  color: #b28d45;
   font-family: 'freshman';
   background-color: black;
   width: 190px;
-  border: solid yellow 3px;
+  border: solid #cde1e9 3px;
   font-size: 14px;
+  margin: 19px 217px
 }
 
 .space {
