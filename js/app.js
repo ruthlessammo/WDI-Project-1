@@ -22,6 +22,15 @@ cheering.src = "audio/cheering.mp3";
 
 var raceInProgress = true;
 
+var startCheering = function() {
+  cheering.play();
+}
+
+var stopCheering = function() {
+      cheering.pause();
+
+}
+
 var initializeSprites = document.getElementById('reset');
 initializeSprites.addEventListener('click', function(e) {
   $sprite1.css('left', 0);
@@ -41,6 +50,7 @@ var getWinner = function() {
   if(counter1 === winningScore || counter2 === winningScore) {
     raceInProgress = false;
     console.log('Winner!');
+    stopCheering();
     if(counter1 === winningScore) {
       trumpWins++;
       trumpSpeech.play();
@@ -87,7 +97,7 @@ $(document).on('keyup', function(e) {
       counter2 = counter2+10;
       console.log(counter2);
     }
-    
+    startCheering();
     getWinner();
   }
 
