@@ -11,7 +11,6 @@ var counter2 = 0;
 var trumpWins = 0;
 var clintonWins = 0;
 
-//----------------------------------------------------------------------------
 var count = 3;
 var timer = setInterval(countDown, 1000);
 
@@ -26,7 +25,6 @@ function countDown() {
     count--;
   }
 }
-
 
 
 var trumpSpeech = document.getElementById('trumpWinningSpeech');
@@ -46,7 +44,6 @@ var startCheering = function() {
 
 var stopCheering = function() {
       cheering.pause();
-
 }
 
 var initializeSprites = document.getElementById('reset');
